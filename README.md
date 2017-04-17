@@ -1,12 +1,12 @@
 ## Button Code Challenge!
 This is Scott Lindquist's Button Code Challenge
 
-# About this app
+### About this app
 
-# What I'm good at
+### What I'm good at
 
-# Areas I'd like to improve
+### Areas I'd like to improve
 
-# My ideal intern project
+### My ideal intern project
 
-# Why I want to intern at Button
+### Why I want to intern at Button
