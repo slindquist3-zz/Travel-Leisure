@@ -10,16 +10,12 @@ class App extends Component {
     super(props)
 
     this.state = {
-      continent: "",
-      price: "",
-      season: ""
+      continent: ""
     }
   }
 
-  setContinent() {
-    debugger
-    this.setState({continent: "poop"})
-    debugger
+  setContinent(continent) {
+    this.setState({continent})
   }
 
   render() {

@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 
 class Continents extends Component {
 
+  passContinent(event){
+    this.props.setContinent(event.target.innerText)
+  }
+
   render() {
+        console.log(this.props.continent)
+    debugger
+
     return (
       <div>
         <h1>Where would you like to travel?</h1>
-        <button onClick={this.props.setContinent} value="Europe" name="Europe">Europe</button>
-        <button onClick={this.props.setContinent} value="Asia" name="Asia">Asia</button>
+        <a onClick={this.passContinent.bind(this)} name="Europe" >Europe</a>
+        <a onClick={this.passContinent.bind(this)} name="Asia">Asia</a>
       </div>
     );
   }

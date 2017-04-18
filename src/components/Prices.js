@@ -13,7 +13,6 @@ class Prices extends Component {
 
     )
   }
-
 }
 
 export default Prices
