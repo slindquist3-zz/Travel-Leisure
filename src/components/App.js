@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Button from './Button.js'
+import Start from './Start.js'
 
 class App extends Component {
 
   render() {
     return (
       <div>
-        <Button/>
+        <Start/>
       </div>
     );
   }

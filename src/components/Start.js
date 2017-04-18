@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-class Button extends Component {
-
+class Start extends Component {
 
   handleClick(event) {
     event.preventDefault();
-    alert("I was clicked!");
+    console.log("I work")
   }
 
   render() {
@@ -15,4 +14,4 @@ class Button extends Component {
   }
 }
 
-export default Button;
+export default Start;
