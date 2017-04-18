@@ -4,12 +4,11 @@ class Start extends Component {
 
   handleClick(event) {
     event.preventDefault();
-    console.log("I work")
   }
 
   render() {
     return (
-        <button onClick={this.handleClick}>This is my button</button>
+        <button onClick={this.handleClick}>Start!</button>
     );
   }
 }
