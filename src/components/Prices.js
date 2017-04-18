@@ -7,13 +7,12 @@ class Prices extends Component {
   }
 
   render() {
-    console.log(this.props.price)
     return (
       <div>
         <h1>What's your budget?</h1>
-        <button>$</button>
-        <button>$$</button>
-        <button>$$$</button>
+        <button onClick={this.passPrices.bind(this)}>$</button>
+        <button onClick={this.passPrices.bind(this)}>$$</button>
+        <button onClick={this.passPrices.bind(this)}>$$$</button>
       </div>
 
     )

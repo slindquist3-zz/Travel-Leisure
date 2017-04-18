@@ -3,6 +3,7 @@ import Start from './Start.js'
 import Continents from './Continents'
 import Prices from './Prices'
 import Seasons from './Seasons'
+import Results from './Results'
 
 class App extends Component {
 
@@ -25,7 +26,7 @@ class App extends Component {
   }
 
   setSeason(season) {
-    this.setSeason({season})
+    this.setState({season})
   }
 
   render() {
@@ -34,7 +35,8 @@ class App extends Component {
         <Start/>
         <Continents continent={this.state.continent} setContinent={this.setContinent.bind(this)}/>
         <Prices price={this.state.price} setPrice={this.setPrice.bind(this)}/>
-        <Seasons price={this.state.seasons} setPrice={this.setSeasons.bind(this)}/>
+        <Seasons season={this.state.seasons} setSeason={this.setSeason.bind(this)}/>
+        <Results continent={this.state.continent} price={this.state.price} season={this.state.season} />
       </div>
     );
   }
