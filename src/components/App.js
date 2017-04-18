@@ -10,7 +10,9 @@ class App extends Component {
     super(props)
 
     this.state = {
-      continent: ""
+      continent: "",
+      price: "",
+      season: ""
     }
   }
 
@@ -18,13 +20,21 @@ class App extends Component {
     this.setState({continent})
   }
 
+  setPrice(price) {
+    this.setState({price})
+  }
+
+  setSeason(season) {
+    this.setSeason({season})
+  }
+
   render() {
     return (
       <div>
         <Start/>
         <Continents continent={this.state.continent} setContinent={this.setContinent.bind(this)}/>
-        <Prices />
-        <Seasons />
+        <Prices price={this.state.price} setPrice={this.setPrice.bind(this)}/>
+        <Seasons price={this.state.seasons} setPrice={this.setSeasons.bind(this)}/>
       </div>
     );
   }
