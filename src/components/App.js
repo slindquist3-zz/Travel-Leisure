@@ -16,11 +16,17 @@ class App extends Component {
     }
   }
 
+  setContinent() {
+    debugger
+    this.setState({continent: "poop"})
+    debugger
+  }
+
   render() {
     return (
       <div>
         <Start/>
-        <Continents />
+        <Continents continent={this.state.continent} setContinent={this.setContinent.bind(this)}/>
         <Prices />
         <Seasons />
       </div>

@@ -1,12 +1,7 @@
 import React, {Component} from 'react'
 
 class Seasons extends Component {
-  constructor(props) {
-    super(props)
 
-    this.state = {season: ""}
-
-  }
 
   render() {
     return (
