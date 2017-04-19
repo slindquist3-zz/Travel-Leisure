@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import {browserHistory} from 'react-router'
 
 class Start extends Component {
 
   handleClick(event) {
-    event.preventDefault();
+
+    this.props.setStart()
   }
 
   render() {
     return (
-        <button onClick={this.handleClick}>Start!</button>
+        <button onClick={this.handleClick.bind(this)}>Start!</button>
     );
   }
 }

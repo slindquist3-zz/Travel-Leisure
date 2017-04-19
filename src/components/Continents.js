@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import {browserHistory} from 'react-router'
+
 
 class Continents extends Component {
 
   passContinents(event){
-    this.props.setContinent(event.target.innerText)
+    this.props.setContinent(event.target.innerText);
   }
 
   render() {
