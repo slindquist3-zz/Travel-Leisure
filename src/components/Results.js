@@ -6,8 +6,8 @@ class Results extends Component {
     return (
       <div>
         Results
-        You've chosen to travel to {this.props.continent} in {this.props.season}.
-        You should budget for about {this.props.price}. Bon Voyage!
+        Consider traveling to {this.props.continent} in {this.props.season}
+        while budgeting for about {this.props.price}. Bon Voyage!
       </div>
 
     )

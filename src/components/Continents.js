@@ -10,8 +10,8 @@ class Continents extends Component {
     return (
       <div>
         <h1>Where would you like to travel?</h1>
-        <a onClick={this.passContinents.bind(this)} name="Europe" >Europe</a>
-        <a onClick={this.passContinents.bind(this)} name="Asia">Asia</a>
+        <button onClick={this.passContinents.bind(this)} name="Europe" >Europe</button>
+        <button onClick={this.passContinents.bind(this)} name="Asia">Asia</button>
       </div>
     );
   }
