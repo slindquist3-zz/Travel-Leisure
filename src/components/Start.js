@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {browserHistory} from 'react-router'
 
 class Start extends Component {
 
@@ -9,14 +8,11 @@ class Start extends Component {
 
   render() {
     return (
-      <div id="landing">
-        <h1 id="logo">Choose Your Own Adventure</h1>
-        <div id="subtext">
-          <p>Traveling is about getting to where you want to be, but sometimes it's hard to figure out where to go, when to go, and how much it could cost.</p>
-          <p>Plan your trip with just 4 clicks a button.</p>
-        </div>
+      <div id="container">
+        <h1>Choose Your Own Adventure</h1>
+          <p>Travel is about getting where you want to be.</p>
+          <p>Plan your trip here with just 4 buttons.</p>
         <button className="start-button" onClick={this.handleClick.bind(this)}>Plan Trip</button>
-
       </div>
     );
   }

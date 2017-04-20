@@ -1,47 +1,55 @@
 @import "partials/mixins";
 
 @include google-font("Lobster")
-@include google-font("Raleway")
 
 $text-color: #243841;
 $heading-font: 'Lobster', cursive;
 $heading-color: #243841;
-$button-font: 'Raleway', sans-serif;
-
-
+$button-font: 'Helvetica', sans-serif;
 
 body {
   font-family: arial;
   background-color: lightblue;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,255,255,0.1)), url(/images/landing7.jpg);
+  background: #648880;
+  background: linear-gradient(to left, #eff7ff, #238dff);
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
   color: $text-color;
+  height:100vh
 }
 
-#landing {
+#container {
   text-align: right;
   float: right;
+  margin-right: 70px;
 
+  @include small-screens {
+    text-align: center;
+    margin-right: 20px;
+  }
 }
 
+p {
+  font-weight: bold;
 
-#subtext {
-  font-size: 15px;
-  text-align: right;
-  width: 530px;
-  margin-right: 70px
+  @include small-screens {
+    font-size: 15px;
+  }
 
 }
 
 h1 {
   text-align: right;
-  margin-right: 70px;
   letter-spacing: 1px;
   font-family: $heading-font;
   color: $heading-color;
   font-size: 3em;
+
+  @include small-screens {
+    font-size: 2em;
+    text-align: center;
+  }
 }
 
 #seasons {
@@ -50,7 +58,12 @@ h1 {
 
 button {
   @include ghost-button;
-  letter-spacing: 3px;
-  float: right;
-  margin-right: 70px;
+  letter-spacing: 2px;
+  text-align: center;
+  vertical-align: center;
+  align: center;
+
+  @include small-screens {
+    text-align: auto;
+  }
 }

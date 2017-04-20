@@ -8,7 +8,7 @@ class Seasons extends Component {
 
   render() {
     return (
-      <div>
+      <div id="container">
         <h1>When can you go on vaction?</h1>
         <button className="season" onClick={this.passSeasons.bind(this)}>Spring</button>
         <button className="season" onClick={this.passSeasons.bind(this)}>Summer</button>

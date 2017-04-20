@@ -3,6 +3,12 @@
   @import url(https://fonts.googleapis.com/css?family=#{$font})
 }
 
+@mixin small-screens() {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
 @mixin ghost-button {
   font: $button-font;
   background-color: transparent;
@@ -29,4 +35,5 @@
     border-color: #fff; /* fallback */
     border-color: rgba(255, 255, 255, 0.4);
   }
+
 }

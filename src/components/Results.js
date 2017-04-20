@@ -6,6 +6,8 @@ class Results extends Component {
     super(props)
 
     this.vacation = this.vacation.bind(this)
+    this.flights = this.flights.bind(this)
+    this.airbnb = this.airbnb.bind(this)
   }
 
   vacation() {
@@ -27,17 +29,22 @@ class Results extends Component {
    return vacation;
   }
 
-  //write logic to translate seasons into travel dates for iframes in expedia and airbnb
+  airbnb(city){
+    window.open('https://www.airbnb.com/s/','_blank')
+  }
 
+  flights(city){
+    window.open('https://www.kayak.com/','_blank')
+  }
 
   render() {
     return (
-      <div>
+      <div id="container">
         {console.log(this.vacation()[this.props.continent][this.props.season][this.props.price])}
         <h1>Check out {(this.vacation()[this.props.continent][this.props.season][this.props.price])}!</h1>
+        <button onClick={this.airbnb}>AirBnB</button>
+        <button onClick={this.flights}>Flights</button>
         <button onClick={this.props.restart}>Plan Again</button>
-
-
       </div>
 
     )
