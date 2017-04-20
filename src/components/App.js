@@ -67,7 +67,7 @@ class App extends Component {
 
   renderComponent(){
     if(this.state.page === 0){
-      return (<Start setStart={this.setStart.bind(this)}/>)
+      return (<Start id="landing" setStart={this.setStart.bind(this)}/>)
     }
     else if (this.state.page === 1) {
       return (<Continents continent={this.state.continent} setContinent={this.setContinent.bind(this)}/>)
@@ -87,6 +87,7 @@ class App extends Component {
 
     return (
       <div>
+        {/* {this.props.children} */}
         {this.renderComponent()}
       </div>
     );

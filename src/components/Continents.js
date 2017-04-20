@@ -12,8 +12,8 @@ class Continents extends Component {
     return (
       <div>
         <h1>Where would you like to travel?</h1>
-        <button onClick={this.passContinents.bind(this)} name="Europe" >Europe</button>
-        <button onClick={this.passContinents.bind(this)} name="Asia">Asia</button>
+        <button className="continent" onClick={this.passContinents.bind(this)} name="Europe" >Europe</button>
+        <button className="continent" onClick={this.passContinents.bind(this)} name="Asia">Asia</button>
       </div>
     );
   }

@@ -10,9 +10,9 @@ class Prices extends Component {
     return (
       <div>
         <h1>What's your budget?</h1>
-        <button onClick={this.passPrices.bind(this)}>$</button>
-        <button onClick={this.passPrices.bind(this)}>$$</button>
-        <button onClick={this.passPrices.bind(this)}>$$$</button>
+        <button className="price" onClick={this.passPrices.bind(this)}>$</button>
+        <button className="price" onClick={this.passPrices.bind(this)}>$$</button>
+        <button className="price" onClick={this.passPrices.bind(this)}>$$$</button>
       </div>
 
     )

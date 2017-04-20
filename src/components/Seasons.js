@@ -10,10 +10,10 @@ class Seasons extends Component {
     return (
       <div>
         <h1>When can you go on vaction?</h1>
-        <button onClick={this.passSeasons.bind(this)}>Spring</button>
-        <button onClick={this.passSeasons.bind(this)}>Summer</button>
-        <button onClick={this.passSeasons.bind(this)}>Fall</button>
-        <button onClick={this.passSeasons.bind(this)}>Winter</button>
+        <button className="season" onClick={this.passSeasons.bind(this)}>Spring</button>
+        <button className="season" onClick={this.passSeasons.bind(this)}>Summer</button>
+        <button className="season" onClick={this.passSeasons.bind(this)}>Fall</button>
+        <button className="season" onClick={this.passSeasons.bind(this)}>Winter</button>
       </div>
     )
   }

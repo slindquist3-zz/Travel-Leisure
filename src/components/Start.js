@@ -4,13 +4,15 @@ import {browserHistory} from 'react-router'
 class Start extends Component {
 
   handleClick(event) {
-
     this.props.setStart()
   }
 
   render() {
     return (
-        <button onClick={this.handleClick.bind(this)}>Start!</button>
+      <div id="landing">
+        <button className="start" onClick={this.handleClick.bind(this)}>Plan Trip</button>
+
+      </div>
     );
   }
 }

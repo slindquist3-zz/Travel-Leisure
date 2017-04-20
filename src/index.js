@@ -12,13 +12,15 @@ import Results from './components/results'
 ReactDOM.render((
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-    </Route>
+        <IndexRoute component={Start} />
+        <Route path='/continents' component={Continents} />
+        <Route path="/seasons" component={Seasons} />
+        <Route path="/prices" component={Prices} />
+        <Route path="/results" component={Results} />
+      </Route>
     </Router>
   ), document.getElementById('root'));
 
 
   /* <Route path="/" component={Start} />
-  <Route path='/continents' component={Continents} />
-  <Route path="/prices" component={Prices} />
-  <Route path="/seasons" component={Seasons} />
-  <Route path="/results" component={Results} /> */
+  */
