@@ -10,12 +10,12 @@ class Start extends Component {
   render() {
     return (
       <div id="landing">
-          <h1 id="logo">Choose Your Own Adventure</h1>
+        <h1 id="logo">Choose Your Own Adventure</h1>
         <div id="subtext">
-          <p>The most enjoyable part of traveling is getting to where you want to be, but sometimes it can be hard to figure out where to go, not to mention when to go or how much it could cost.
-          Choose Your Own Adventure can help you plan your trip with just 4 clicks a button.</p>
+          <p>Traveling is about getting to where you want to be, but sometimes it's hard to figure out where to go, when to go, and how much it could cost.</p>
+          <p>Plan your trip with just 4 clicks a button.</p>
         </div>
-        <button className="start" onClick={this.handleClick.bind(this)}>Plan Trip</button>
+        <button className="start-button" onClick={this.handleClick.bind(this)}>Plan Trip</button>
 
       </div>
     );

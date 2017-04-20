@@ -35,7 +35,7 @@ class Results extends Component {
       <div>
         {console.log(this.vacation()[this.props.continent][this.props.season][this.props.price])}
         <h1>Check out {(this.vacation()[this.props.continent][this.props.season][this.props.price])}!</h1>
-
+        <button onClick={this.props.restart}>Plan Again</button>
 
 
       </div>

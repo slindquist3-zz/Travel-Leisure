@@ -6,22 +6,20 @@
 @mixin ghost-button {
   font: $button-font;
   background-color: transparent;
-  border-color: white;
+  border-color: $text-color;
   border-width: 2px;
   border-radius: 25px;
-  color: white;
-  font-size: 2em;
-  height: 80px;
-  width: 200px;
-  text-align: center;
-  left: 50%;
+  color: $text-color;
+  font-size: 1em;
+  height: 40px;
+  width: 150px;
   transition: background-color 0.3s ease-out,
             border-color 0.3s ease-out;
 
   &:hover {
-    background-color: #fff; /* fallback */
+    background-color: $text-color; /* fallback */
     background-color: rgba(255, 255, 255, 0.4);
-    border-color: #fff; /* fallback */
+    border-color: $text-color; /* fallback */
     border-color: rgba(255, 255, 255, 0.4);
   }
 

@@ -64,6 +64,10 @@ class App extends Component {
     console.log(this.state.page++)
     this.setState({page: this.state.page++})
   }
+  restart() {
+    console.log(this.state.page++)
+    this.setState({page: 0})
+  }
 
   renderComponent(){
     if(this.state.page === 0){
@@ -79,7 +83,7 @@ class App extends Component {
       return (<Prices price={this.state.price} setPrice={this.setPrice.bind(this)}/>)
     }
     else if (this.state.page === 4){
-      return (<Results vacation={this.vacation.bind(this)} displayResult={this.displayResult.bind(this)} continent={this.state.continent} price={this.state.price} season={this.state.season} />)
+      return (<Results restart = {this.restart.bind(this)} vacation={this.vacation.bind(this)} displayResult={this.displayResult.bind(this)} continent={this.state.continent} price={this.state.price} season={this.state.season} />)
     }
   }
 

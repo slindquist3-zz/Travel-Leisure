@@ -3,7 +3,7 @@
 @include google-font("Lobster")
 @include google-font("Raleway")
 
-$text-color: white;
+$text-color: #243841;
 $heading-font: 'Lobster', cursive;
 $heading-color: #243841;
 $button-font: 'Raleway', sans-serif;
@@ -13,39 +13,44 @@ $button-font: 'Raleway', sans-serif;
 body {
   font-family: arial;
   background-color: lightblue;
-  background-image: url('../images/landing7.jpg');
-  opacity: .8;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255,255,255,0.1)), url(/images/landing7.jpg);
+  background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
-  overflow-x: hidden;
-  overflow-y: auto;
+  color: $text-color;
 }
 
-#subtext {
-  width: 400px;
-  margin-left: 800px;
+#landing {
   text-align: right;
+  float: right;
+
+}
+
+
+#subtext {
   font-size: 15px;
+  text-align: right;
+  width: 530px;
+  margin-right: 70px
+
 }
 
 h1 {
+  text-align: right;
+  margin-right: 70px;
   letter-spacing: 1px;
   font-family: $heading-font;
   color: $heading-color;
   font-size: 3em;
-  text-align: right;
-  margin-right: 100px;
+}
+
+#seasons {
 
 }
 
 button {
   @include ghost-button;
   letter-spacing: 3px;
-  margin-left: 80%;
-  font-size: 24px;
-  display: block;
-}
-
-.start {
-
+  float: right;
+  margin-right: 70px;
 }
