@@ -27,14 +27,16 @@ class Results extends Component {
    return vacation;
   }
 
+  //write logic to translate seasons into travel dates for iframes in expedia and airbnb
+
 
   render() {
     return (
       <div>
         {console.log(this.vacation()[this.props.continent][this.props.season][this.props.price])}
-        Check out {(this.vacation()[this.props.continent][this.props.season][this.props.price])}!
+        <h1>Check out {(this.vacation()[this.props.continent][this.props.season][this.props.price])}!</h1>
 
-        
+
 
       </div>
 

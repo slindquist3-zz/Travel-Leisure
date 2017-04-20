@@ -1,7 +1,4 @@
-@mixin google-font($font) {
-  $font: unquote($font);
-  @import url(https://fonts.googleapis.com/css?family=#{$font})
-}
+@import "partials/mixins";
 
 @include google-font("Lobster")
 @include google-font("Raleway")
@@ -11,48 +8,24 @@ $heading-font: 'Lobster', cursive;
 $heading-color: #243841;
 $button-font: 'Raleway', sans-serif;
 
-@mixin ghost {
-  font: $button-font;
-  background-color: transparent;
-  border-color: white;
-  border-width: 2px;
-  border-radius: 25px;
-  color: white;
-  font-size: 2em;
-  height: 80px;
-  width: 200px;
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  transition: background-color 0.3s ease-out,
-            border-color 0.3s ease-out;
 
-  &:hover {
-    background-color: #fff; /* fallback */
-    background-color: rgba(255, 255, 255, 0.4);
-    border-color: #fff; /* fallback */
-    border-color: rgba(255, 255, 255, 0.4);
-  }
-
-  &:active{
-    background-color: white;
-    color: white;
-    border-color: #fff; /* fallback */
-    border-color: rgba(255, 255, 255, 0.4);
-  }
-}
 
 body {
   font-family: arial;
   background-color: lightblue;
-}
-
-#landing {
   background-image: url('../images/landing7.jpg');
   opacity: .8;
-  background-position: center;
+  background-position: fixed;
   background-size: cover;
-  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#subtext {
+  width: 400px;
+  margin-left: 800px;
+  text-align: right;
+  font-size: 15px;
 }
 
 h1 {
@@ -60,16 +33,19 @@ h1 {
   font-family: $heading-font;
   color: $heading-color;
   font-size: 3em;
+  text-align: right;
+  margin-right: 100px;
 
 }
 
 button {
-  @include ghost;
+  @include ghost-button;
   letter-spacing: 3px;
+  margin-left: 80%;
+  font-size: 24px;
+  display: block;
 }
 
 .start {
-  margin-top: 5%;
-  margin-left: 80%;
-  font-size: 24px;
+
 }
