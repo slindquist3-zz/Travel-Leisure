@@ -9,9 +9,7 @@ $button-font: 'Helvetica', sans-serif;
 
 body {
   font-family: arial;
-  // background: #648880;
   background-image: url('/images/landing3.jpeg');
-  // background: linear-gradient(to left, #eff7ff, #238dff);
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
@@ -53,9 +51,7 @@ h1 {
   text-align: right;
   letter-spacing: 1px;
   font-family: $heading-font;
-  color: $main-color;
   font-size: 3.5em;
-  margin: 0;
   margin-top: 30px;
   margin-bottom: 30px;
 
@@ -72,6 +68,11 @@ h1 {
   width: 50%;
   text-align: center;
   margin: 0;
+
+  @include small-screens {
+    border-width: 2px;
+    width: 90%;
+  }
 }
 
 button {

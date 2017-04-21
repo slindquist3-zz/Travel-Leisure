@@ -66,7 +66,7 @@ class App extends Component {
   }
   restart() {
     console.log(this.state.page++)
-    this.setState({page: 0})
+    this.setState({page: 1})
   }
 
   renderComponent(){
