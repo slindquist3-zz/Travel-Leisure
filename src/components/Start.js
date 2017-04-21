@@ -9,9 +9,8 @@ class Start extends Component {
   render() {
     return (
       <div id="container">
-        <h1>Choose Your Own Adventure</h1>
-          <p>Travel is about getting where you want to be.</p>
-          <p>Plan your trip here with just 4 buttons.</p>
+        <h1>Travel / Leisure</h1>
+          <p>Plan your trip with just 4 buttons.</p>
         <button className="start-button" onClick={this.handleClick.bind(this)}>Plan Trip</button>
       </div>
     );

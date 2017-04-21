@@ -23,13 +23,18 @@ body {
   text-align: right;
   float: right;
   margin-right: 70px;
+
+  @include small-screens {
+    text-align: center;
+    margin-right: 20px;
+  }
 }
 
 p {
   font-weight: bold;
 
   @include small-screens {
-    font-size: 80%;
+    font-size: 15px;
   }
 
 }
@@ -43,6 +48,7 @@ h1 {
 
   @include small-screens {
     font-size: 2em;
+    text-align: center;
   }
 }
 
@@ -55,12 +61,9 @@ button {
   letter-spacing: 2px;
   text-align: center;
   vertical-align: center;
+  align: center;
 
   @include small-screens {
-    display: inline-flex;
-  }
-
-  & + & {
-    padding-left: 20px
+    text-align: auto;
   }
 }

@@ -11,7 +11,9 @@ class Prices extends Component {
       <div id="container">
         <h1>What's your budget?</h1>
         <button className="price" onClick={this.passPrices.bind(this)}>$</button>
+        <div className="divider"></div>
         <button className="price" onClick={this.passPrices.bind(this)}>$$</button>
+        <div className="divider"></div>
         <button className="price" onClick={this.passPrices.bind(this)}>$$$</button>
       </div>
 

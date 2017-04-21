@@ -43,7 +43,9 @@ class Results extends Component {
         {console.log(this.vacation()[this.props.continent][this.props.season][this.props.price])}
         <h1>Check out {(this.vacation()[this.props.continent][this.props.season][this.props.price])}!</h1>
         <button onClick={this.airbnb}>AirBnB</button>
+        <div className="divider"></div>
         <button onClick={this.flights}>Flights</button>
+        <div className="divider"></div>
         <button onClick={this.props.restart}>Plan Again</button>
       </div>
 
