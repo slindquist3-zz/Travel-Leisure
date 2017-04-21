@@ -18,30 +18,6 @@ class App extends Component {
     }
   }
 
-  vacation() {
-   const vacation = {
-     Asia: {
-       Spring: {$: "Hanoi, Vietnam", $$: "Hong Kong, China", $$$: "Kyoto, Japan"},
-       Summer: {$: "Borneo, Malaysia", $$: "Uluwatu, Bali, Indonesia", $$$: "Singapore"},
-       Fall: {$: "Hanoi, Vietnam", $$: "Beijing, China", $$$: "Tokyo, Japan"},
-       Winter: {$: "Chang, Mai, Thailand", $$: "Panjim, India", $$$: "Hokkaido, Japan"}
-     },
-     Europe: {
-       Spring: {$: "Budapest, Hungary", $$: "Barcelona, Spain", $$$: "Milan, Italy"},
-       Summer: {$: "Prague, Czech Republic", $$: "Berlin, Germany", $$$: "Stokholm, Sweden"},
-       Fall: {$: "Budapest, Hungary", $$: "Madrid, Spain", $$$: "Paris, France"},
-       Winter: {$: "Lisbon, Portugol", $$: "Amsterdam, Netherlands", $$$: "Vienna, Austria"}
-     }
-   }
-
-   return vacation;
-  }
-
-  displayResult(vacation) {
-    debugger
-    console.log(vacation())
-  }
-
   setContinent(continent) {
     this.setState({continent})
       console.log(this.state.page++)
@@ -50,13 +26,13 @@ class App extends Component {
 
   setPrice(price) {
     this.setState({price})
-      console.log(this.state.page++)
+    console.log(this.state.page++)
     this.setState({page: this.state.page++})
   }
 
   setSeason(season) {
     this.setState({season})
-      console.log(this.state.page++)
+    console.log(this.state.page++)
     this.setState({page: this.state.page++})
   }
 
@@ -83,7 +59,7 @@ class App extends Component {
       return (<Prices price={this.state.price} setPrice={this.setPrice.bind(this)}/>)
     }
     else if (this.state.page === 4){
-      return (<Results restart = {this.restart.bind(this)} vacation={this.vacation.bind(this)} displayResult={this.displayResult.bind(this)} continent={this.state.continent} price={this.state.price} season={this.state.season} />)
+      return (<Results restart = {this.restart.bind(this)} continent={this.state.continent} price={this.state.price} season={this.state.season} />)
     }
   }
 
@@ -91,7 +67,6 @@ class App extends Component {
 
     return (
       <div>
-        {/* {this.props.children} */}
         {this.renderComponent()}
       </div>
     );

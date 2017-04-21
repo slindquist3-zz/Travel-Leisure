@@ -4,10 +4,8 @@ class Results extends Component {
 
   constructor(props) {
     super(props)
-
+    
     this.vacation = this.vacation.bind(this)
-    this.flights = this.flights.bind(this)
-    this.airbnb = this.airbnb.bind(this)
   }
 
   vacation() {
@@ -29,31 +27,15 @@ class Results extends Component {
    return vacation;
   }
 
-  //Spring: {$: {Hanoi:{name: "Hanoi Vietnam", picture: "url"}, $$: "Hong Kong, China", $$$: "Kyoto, Japan"}
-
-$:[{name:"hanoi vietnam", picture: "url"}]
-
-  airbnb(city){
-    window.open('https://www.airbnb.com/s/','_blank')
-  }
-
-  flights(city){
-    window.open('https://www.kayak.com/','_blank')
-  }
-
   render() {
     return (
       <div id="container">
         {console.log(this.vacation()[this.props.continent][this.props.season][this.props.price])}
         <h1>Check out {(this.vacation()[this.props.continent][this.props.season][this.props.price][0]["name"])}!</h1>
-        {/* <button onClick={this.airbnb}>AirBnB</button> */}
         <img className="image" src={(this.vacation()[this.props.continent][this.props.season][this.props.price][0]["image"])} />
         <div className="divider"></div>
-        {/* <button onClick={this.flights}>Flights</button> */}
         <button id="plan-again" onClick={this.props.restart}>Plan Again</button>
       </div>
-
-
     )
   }
 }
