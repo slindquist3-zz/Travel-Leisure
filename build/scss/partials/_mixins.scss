@@ -4,7 +4,7 @@
 }
 
 @mixin small-screens() {
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 475px) {
     @content;
   }
 }
@@ -14,13 +14,19 @@
   background-color: transparent;
   border-color: $main-color;
   border-width: 2px;
-  border-radius: 25px;
+  border-radius: 30px;
   color: $main-color;
-  font-size: 1em;
-  height: 40px;
-  width: 150px;
+  font-size: 1.2em;
+  height: 50px;
+  width: 170px;
   transition: background-color 0.3s ease-out,
             border-color 0.3s ease-out;
+  @include small-screens {
+    font-size: 1em;
+    height: 40px;
+    width: 120px;
+
+  }
 
   &:hover {
     background-color: $main-color;
