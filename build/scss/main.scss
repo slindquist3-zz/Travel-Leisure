@@ -29,10 +29,10 @@ body {
   text-align: right;
   float: right;
   margin-right: 70px;
-  flex-direction: row | row-reverse | column | column-reverse;
 
   @include small-screens {
     text-align: center;
+    float: center;
     margin-left: 20px;
     margin-right: 40px;
   }
@@ -64,9 +64,14 @@ h1 {
     text-align: center;
   }
 }
-
-#seasons {
-
+.image {
+  border: solid;
+  border-color: $main-color;
+  border-width: 5px;
+  position: relative;
+  width: 50%;
+  text-align: center;
+  margin: 0;
 }
 
 button {
