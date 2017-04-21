@@ -22,7 +22,7 @@
   transition: background-color 0.3s ease-out,
             border-color 0.3s ease-out;
   @include small-screens {
-    font-size: 1em;
+    font-size: .8em;
     height: 40px;
     width: 120px;
 
