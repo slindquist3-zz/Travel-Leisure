@@ -12,10 +12,10 @@
 @mixin ghost-button {
   font: $button-font;
   background-color: transparent;
-  border-color: $text-color;
+  border-color: $main-color;
   border-width: 2px;
   border-radius: 25px;
-  color: $text-color;
+  color: $main-color;
   font-size: 1em;
   height: 40px;
   width: 150px;
@@ -23,9 +23,9 @@
             border-color 0.3s ease-out;
 
   &:hover {
-    background-color: $text-color; /* fallback */
+    background-color: $main-color; /* fallback */
     background-color: rgba(255, 255, 255, 0.4);
-    border-color: $text-color; /* fallback */
+    border-color: $main-color; /* fallback */
     border-color: rgba(255, 255, 255, 0.4);
   }
 
