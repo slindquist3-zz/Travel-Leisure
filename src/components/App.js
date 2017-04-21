@@ -48,23 +48,18 @@ class App extends Component {
   renderComponent(){
     if(this.state.page === 0){
       return (<Start setStart={this.setStart.bind(this)}/>)
-    }
-    else if (this.state.page === 1) {
+    } else if (this.state.page === 1) {
       return (<Continents continent={this.state.continent} setContinent={this.setContinent.bind(this)}/>)
-    }
-    else if (this.state.page ===2) {
+    } else if (this.state.page ===2) {
       return (<Seasons season={this.state.seasons} setSeason={this.setSeason.bind(this)}/>)
-    }
-    else if (this.state.page === 3){
+    } else if (this.state.page === 3){
       return (<Prices price={this.state.price} setPrice={this.setPrice.bind(this)}/>)
-    }
-    else if (this.state.page === 4){
-      return (<Results restart = {this.restart.bind(this)} continent={this.state.continent} price={this.state.price} season={this.state.season} />)
+    } else if (this.state.page === 4){
+      return (<Results restart={this.restart.bind(this)} continent={this.state.continent} season={this.state.season} price={this.state.price} />)
     }
   }
 
   render() {
-
     return (
       <div>
         {this.renderComponent()}

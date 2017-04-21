@@ -11,7 +11,7 @@ class Start extends Component {
       <div id="container">
         <h1>Travel / Leisure</h1>
           <p>Plan your trip with just 4 buttons.</p>
-        <button className="start-button" onClick={this.handleClick.bind(this)}>Plan Trip</button>
+        <button onClick={this.handleClick.bind(this)}>Plan Trip</button>
       </div>
     );
   }

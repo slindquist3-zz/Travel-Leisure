@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class Continents extends Component {
 
   passContinents(event){
